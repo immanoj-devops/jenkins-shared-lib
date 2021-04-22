@@ -11,7 +11,7 @@ pipeline {
             }
         stage('Quality Gate'){
             steps {
-              sh ""
+              
             }
         }
         }
