@@ -1,4 +1,4 @@
-def call(String $GURLmessage) {
+def call(String GURLmessage) {
 pipeline {
     agent any 
            parameters {
