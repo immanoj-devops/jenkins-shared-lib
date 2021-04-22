@@ -12,7 +12,7 @@ pipeline {
         stage('Quality Gate'){
             steps {
               sh "sonar-quality-gate.sh admin DevOps@135. 172.31.74.214 ${COMPONENT_NAME}"
-              STATUS=$(curl -u "admin:Devops@135." "http://172.31.74.214:9000/api/qualitygates/project_status?projectKey=catalogue" | jq  '.projectStatus.status' | xargs)
+              STATUS=$(curl -u "admin:Devops@135." "http://:9000/api/qualitygates/project_status?projectKey=catalogue" | jq  '.projectStatus.status' | xargs)
             }
         }
         }
