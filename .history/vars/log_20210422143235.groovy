@@ -15,7 +15,7 @@ pipeline {
             }
         }
     }
-  }  
+}
 }
 
 def warning(message) {
