@@ -14,7 +14,7 @@ pipeline {
               
               STATUS=$(curl -u "admin:Devops@135." "http://172.31.74.214:9000/api/qualitygates/project_status?projectKey=${COMPONENT_NAME}" | jq  '.projectStatus.status' | xargs)
                 }
-            }
+        }
         }
     }
 }
