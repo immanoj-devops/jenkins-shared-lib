@@ -12,8 +12,8 @@ pipeline {
                     -Dsonar.login=2f7e9cbf5079973a6f2258d0676c937738515ef7
 
                '''
-                }
             }
         }
     }
+}
 }
