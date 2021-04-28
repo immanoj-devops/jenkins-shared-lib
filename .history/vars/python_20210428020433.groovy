@@ -28,7 +28,7 @@ pipeline {
             }
         stage('Packaging the artifacts'){
             steps {
-                    sh "zip ${COMPONENT_NAME}.zip *.py payment.ini "
+                    sh "zip ${COMPONENT_NAME}.zip *.py payment.ini"
                 }
             }
 
