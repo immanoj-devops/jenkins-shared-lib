@@ -21,8 +21,8 @@ pipeline {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                            
-                        sh  "jslint *.js | true"
-                 }   
+                sh  "jslint *.js | true"
+                }   
               
                 }
             }
