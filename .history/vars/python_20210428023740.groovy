@@ -36,7 +36,7 @@ pipeline {
             }
         stage('Uploading the artifacts'){
             steps {
-                    sh "curl -v -u admin:Devops@135. --upload-file ${COMPONENT_NAME}.${MAJOR_VERSION}.${BUILD_NUMBER}.zip http://172.31.77.55:8081/repository/${}"
+                    sh "curl -v -u admin:Devops@135. --upload-file ${COMPONENT_NAME}.${MAJOR_VERSION}.${BUILD_NUMBER}.zip http://172.31.77.55:8081/repository/"
 
                 }
             }
