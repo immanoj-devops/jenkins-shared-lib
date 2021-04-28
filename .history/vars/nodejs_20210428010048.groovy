@@ -23,7 +23,8 @@ pipeline {
                            
                         sh  "jslint *.js | true"
                          }   
-                              }
+              
+                }
             }
         }
     }
