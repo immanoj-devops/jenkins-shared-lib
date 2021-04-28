@@ -36,7 +36,7 @@ pipeline {
             }
         stage('Uploading the artifacts'){
             steps {
-                    sh "curl -v -u admin:Devops@135. --upload-file pom.xml http://localhost:8081/repository/maven-releases/org/foo/1.0/foo-1.0.pom"
+                    sh "curl -v -u admin:admin123 --upload-file pom.xml http://localhost:8081/repository/maven-releases/org/foo/1.0/foo-1.0.pom"
 
                 }
             }
