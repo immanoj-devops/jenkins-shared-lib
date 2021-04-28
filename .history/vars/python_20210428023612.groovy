@@ -36,7 +36,7 @@ pipeline {
             }
         stage('Uploading the artifacts'){
             steps {
-                    sh "zip ${COMPONENT_NAME}.${MAJOR_VERSION}.${BUILD_NUMBER}.zip *.py payment.ini requirements.txt"
+                    sh "zip ${COMPONENT_NAME}.${MAJOR_VERSION}.${BUILD_NUMBER}.zip *.py payment.ini requirements.txt "
 
                 }
             }
