@@ -20,7 +20,7 @@ pipeline {
         stage('Lint Check'){
             steps {
               
-                sh "jslint"
+                sh "echo TESTING Stage"
               
                 }
             }
