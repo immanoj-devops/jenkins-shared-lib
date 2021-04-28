@@ -13,7 +13,7 @@ pipeline {
         stage('Sonar Scan') {
             steps {
                sh "pwd; ls -ltra"
-               sh "sonar-scanner  -Dsonar.projectKey=${COMPONENT_NAME} -Dsonar.java.binaries= -Dsonar.sources=. -Dsonar.host.url=http://172.31.74.214:9000 -Dsonar.login=2f7e9cbf5079973a6f2258d0676c937738515ef7"             
+               sh "sonar-scanner  -Dsonar.projectKey=${COMPONENT_NAME} -Dsonar.java.binaries -Dsonar.sources=. -Dsonar.host.url=http://172.31.74.214:9000 -Dsonar.login=2f7e9cbf5079973a6f2258d0676c937738515ef7"             
                 
                 }
             }
