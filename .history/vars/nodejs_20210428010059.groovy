@@ -19,7 +19,8 @@ pipeline {
             }
         stage('Lint Check'){
             steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {                           
+                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+                           
                         sh  "jslint *.js | true"
                        }   
                 }
