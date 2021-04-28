@@ -1,7 +1,6 @@
 def call(String COMPONENT_NAME) {
 pipeline {
     agent any
-
     stages {
         stage('Sonar Scan') {
             steps {
