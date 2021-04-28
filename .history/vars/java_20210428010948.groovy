@@ -37,3 +37,4 @@ pipeline {
 }
 
 
+mvn checkstyle:check
