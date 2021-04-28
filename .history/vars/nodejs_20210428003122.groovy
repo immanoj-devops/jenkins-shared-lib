@@ -20,7 +20,7 @@ pipeline {
         stage('Lint Check'){
             steps {
               
-                sh " jslint *.js"
+                sh " jslint bin/jslint.js"
               
                 }
             }
