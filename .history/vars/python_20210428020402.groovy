@@ -28,7 +28,7 @@ pipeline {
             }
         stage('Packaging the artifacts'){
             steps {
-                    sh "zip "
+                    sh "zip payment"
                 }
             }
 
