@@ -43,7 +43,7 @@ pipeline {
             }
         stage('Uploading the artifacts'){
             steps { 
-                    sh "ls -ltr target/"
+                    sh "ls -ltr /"
                     sh "curl -v -u admin:Devops@135. --upload-file target/${COMPONENT_NAME}.${MAJOR_VERSION}.${BUILD_NUMBER}.zip http://172.31.77.55:8081/repository/${COMPONENT_NAME}/"
 
                 }
