@@ -34,7 +34,7 @@ pipeline {
             }
         stage('Packaging the artifacts'){
             steps {
-                    sh "mvn package; ls -ltr target/"
+                    sh "mvn package; ls -ltr targt/"
                 }
             }
 
