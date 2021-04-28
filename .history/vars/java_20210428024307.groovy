@@ -35,7 +35,7 @@ pipeline {
         stage('Packaging the artifacts'){
             steps {
                     sh "mvn package; ls -ltr target/"
-                    sh "cp target/${COMPONENT_NAME}1.0.jar "
+                    sh "cp target/${COMPONENT_NAME}"
                 }
             }
         stage('Uploading the artifacts'){
