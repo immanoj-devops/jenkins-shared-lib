@@ -32,7 +32,7 @@ pipeline {
                     }   
                 }
             }
-        stage(' Check'){
+        stage('Lint Check'){
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {                           
                         sh "mvn checkstyle:check"
