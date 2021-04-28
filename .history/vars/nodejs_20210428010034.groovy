@@ -23,7 +23,6 @@ pipeline {
                     sh "exit 1"
                            
                 sh  "jslint *.js | true"
-                }   
               
                 }
             }
